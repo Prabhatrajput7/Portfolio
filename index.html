@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="background">
+<div class="nav">
+	<a class="a active" href="#">HOME</a>
+	<a class="b" href="#">ABOUT</a>
+	<a class="c" href="#">SKILLS</a>	
+</div>	
+<div class="content">
+<div class="home">
+	<h1> I am Prabhat Rajput</h1>
+	<h3>Pragrammer and Graphic Designer</h3></div>
+	<div class="aboutus">
+		<p>Hello Everyone, <br></p>
+		<p>I am Prabhat Rajput. I am from New Delhi</p>
+		<p>Coming to my education</p> 
+	    <p>I am pursuing B.Tech in Computer Science and Engineering from Manav Rachna International Institute of Research and Studies.</p>
+	    <p>I did my internship from R.S.B Systems Pvt Ltd.</p>
+		<p>My strength is my positive attitude. I am self-motivated, hardworking and quick learner.</p>
+		<p>My hobbies are playing video games, football, table tennis, listening music and study of cosmology.</p>
+		<p>My Github Profile:- <a href="https://github.com/prabhatrajput7" target="_blank"> Click Here</a></p>
+		<P>My Fiverr Profile.:- <a href="https://www.fiverr.com/prabhatrajput?up_rollout=true" target="_blank"> Click Here</a></P>
+	</div>	
+	<div class="gallery">
+		<div class="image">
+			<img src="images/1.jpg"/>
+		</div>
+		<div class="image">
+			<img src="images/2.jpg"/>
+		</div>
+		<div class="image">
+			<img src="images/3.jpg"/>
+		</div>
+		<div class="image">
+			<img src="images/4.jpg"/>
+		</div>
+		<div class="image">
+			<img src="images/5.jpg"/>
+		</div>
+		<div class="image">
+			<img src="images/6.jpg"/>
+		</div>
+		<div class="image">
+			<img src="images/7.jpg"/>
+		</div>
+		<div class="image">
+			<img src="images/8.jpg"/>
+		</div>
+		<div class="image">
+			<img src="images/9.jpg"/>
+		</div>
+	</div>
+	
+</div>
+</div> 
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('a').click(function(){
+			var selected = $(this);
+			$('a').removeClass('active');
+			$(selected).addClass('active');
+		});
+		var $a = $('.a'),
+		$b = $('.b'),
+		$c = $('.c'),
+		$d = $('.d'),
+		$home = $('.home'),
+		$aboutus = $('.aboutus'),
+		$gallery = $('.gallery'),
+		$contactus = $('.contactus');
+		$a.click(function(){
+			$home.fadeIn();
+			$aboutus.fadeOut();
+			$gallery.fadeOut();
+			$contactus.fadeOut();
+		});
+		$b.click(function(){
+			$aboutus.fadeIn();
+			$home.fadeOut();
+			$gallery.fadeOut();
+			$contactus.fadeOut();
+		});
+		$c.click(function(){
+			$gallery.fadeIn();
+			$home.fadeOut();
+			$aboutus.fadeOut();
+			$contactus.fadeOut();
+		});
+		$d.click(function(){
+			$contactus.fadeIn();
+			$home.fadeOut();
+			$gallery.fadeOut();
+			$aboutus.fadeOut();
+			
+		});
+	});
+</script>
+</body>
+</html>	
